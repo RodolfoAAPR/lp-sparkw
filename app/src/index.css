@@ -285,6 +285,8 @@ section[id] { scroll-margin-top: 84px; }
   transform: scaleY(var(--k, 0));
 }
 .sw-no {
+  position: relative;
+  z-index: 1;
   width: 24px;
   height: 24px;
   border-radius: 50%;
