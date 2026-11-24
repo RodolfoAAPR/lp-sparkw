@@ -49,9 +49,15 @@ A definir. Celular é tratado como produto à parte: foto no lugar do vídeo, se
 - 2026-11-24: Cloudflare e Higgsfield fora do escopo por enquanto, a pedido do dono. Sem geração paga até liberar.
 - 2026-11-24: régua de qualidade é a LP da AutoSeg (estrutura e padrão, não a identidade).
 - 2026-11-24: repo público RodolfoAAPR/lp-sparkw, commits em conventional commits.
+- 2026-11-24: sensação da página é épica e cinematográfica (briefing).
+- 2026-11-24: materiais vindos do ar, salvos em contexto/ (briefing).
+- 2026-11-24: acesso grátis no teste fechado, diferencial líder é conquista vira recompensa, prova só com fonte (briefing).
 
 ## Pendências
 
-1. Logo, prints do app, textos oficiais e dados de prova: pedir no briefing (Fase 1, pergunta 4).
-2. Regras do SPK (como ganha, como resgata): confirmar com fonte do dono.
-3. ffmpeg ausente no PC: instalar com `winget install Gyan.FFmpeg` antes da Fase 7.
+1. Termo "bout" na frase do /baixar: é termo da marca ou revisão.
+2. Regras do SPK: como ganha, quanto vale, como resgata.
+3. URL final do botão: instalador direto ou página /baixar.
+4. Números futuros com fonte (usuários, SPK distribuído).
+5. Prints reais do app quando quiser mostrar o produto.
+6. ffmpeg ausente no PC: instalar com `winget install Gyan.FFmpeg` antes da Fase 7.

@@ -1,0 +1,16 @@
+Fonte dos fatos: textos copiados de https://sparkw.app/baixar em 2026-11-24.
+Nada aqui pode ser reescrito na LP sem manter o sentido. Termos estranhos vão para as pendências.
+
+- Selo: Teste fechado · Windows
+- Título: Jogar agora pode ter um sentido a mais.
+- Apoio: Você joga. Eu cuido do resto. Você nem percebe, cada bout que você cumpre vira SPK.
+- Botão: Baixar para Windows (Versão 1.0.0.47)
+- Link do botão: https://0tzlyaxrwq93xqqe.public.blob.vercel-storage.com/setup/1.0.0.47/sparkw-setup-1.0.0.47.exe?download=1
+- Aviso Windows: O Windows vai avisar. Pode seguir.
+  1. Se o navegador perguntar, escolha Manter.
+  2. Na tela "O Windows protegeu o seu PC", clique em Mais informações e depois em Executar assim mesmo.
+  3. Instale e crie a sua conta com o e-mail. O código chega na hora.
+  - O aviso aparece porque eu ainda sou novo por aqui.
+- Logo: /marca/logo.svg (salvo em contexto/logo.svg)
+- Plataformas (fala do dono, 2026-11-24): Xbox, PSN e Steam.
+- Conceito (fala do dono, 2026-11-24): recompensa por conquista dentro do jogo, para quem platina e vai obtendo achievements.
