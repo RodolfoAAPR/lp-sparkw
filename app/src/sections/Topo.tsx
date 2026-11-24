@@ -2,8 +2,6 @@ import { useEffect, useState, type CSSProperties } from "react";
 import Palavras from "@/components/Palavras";
 import { base } from "@/lib/base";
 
-const TITULO = ["Jogar", "agora", "pode", "ter", "um", "sentido", "a", "mais."];
-
 export default function Topo() {
   // A abertura só começa com as fontes e o traço do logo prontos (ou 1,5 s,
   // o que vier primeiro): nada anima com fonte reserva no meio do gesto.
@@ -62,11 +60,14 @@ export default function Topo() {
           />
           <div className="sw-marca-risco" id="sw-marca-risco" aria-hidden="true" />
         </div>
-        <p className="sw-mono sw-hero-fase mt-10" style={{ "--d": "2000ms" } as CSSProperties}>
+        <p className="sw-mono sw-hero-fase mt-8" style={{ "--d": "2000ms" } as CSSProperties}>
           Teste fechado · Windows
         </p>
         <h1 className="sw-display sw-titulo sw-topo-titulo mt-6">
-          <Palavras palavras={TITULO} emStart={5} atraso="2.05s" />
+          <Palavras atraso="2.05s">
+            Jogar agora pode ter um{" "}
+            <em>sentido a mais.</em>
+          </Palavras>
         </h1>
         <div className="sw-hero-fase" style={{ "--d": "3000ms" } as CSSProperties}>
           <p className="mt-8 max-w-[34ch] text-lg" style={{ color: "var(--sw-text-2)" }}>
@@ -80,7 +81,7 @@ export default function Topo() {
               Versão 1.0.0.47 · Grátis no teste
             </p>
           </div>
-          <p className="sw-mono mt-10" style={{ color: "var(--sw-text-2)" }}>
+          <p className="sw-mono mt-8" style={{ color: "var(--sw-text-2)" }}>
             Xbox · PSN · Steam
           </p>
         </div>
