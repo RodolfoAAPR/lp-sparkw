@@ -24,6 +24,20 @@ export default function ComoFunciona() {
     void el.offsetWidth;
     el.classList.add("tocou");
   };
+  // Inclinação 3D que segue o mouse, só no computador com movimento liberado.
+  const inclinar = (e: React.MouseEvent<HTMLButtonElement>) => {
+    const el = cartao.current;
+    if (!el) return;
+    if (matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+    if (!matchMedia("(hover: hover) and (pointer: fine)").matches) return;
+    const r = el.getBoundingClientRect();
+    const x = (e.clientX - r.left) / r.width - 0.5;
+    const y = (e.clientY - r.top) / r.height - 0.5;
+    el.style.transform = `perspective(900px) rotateX(${(-y * 6).toFixed(2)}deg) rotateY(${(x * 6).toFixed(2)}deg)`;
+  };
+  const endireitar = () => {
+    cartao.current?.style.removeProperty("transform");
+  };
 
   return (
     <section id="como-funciona" className="py-12 md:py-16">
@@ -63,6 +77,8 @@ export default function ComoFunciona() {
           type="button"
           className="sw-trofeu mt-14"
           onClick={tocar}
+          onMouseMove={inclinar}
+          onMouseLeave={endireitar}
           aria-live="polite"
           aria-label="Demonstração: troféu Just Like Paradise, do GTA VI. Toque para ver o pop."
           data-reveal
@@ -77,6 +93,7 @@ export default function ComoFunciona() {
             height="630"
           />
           <span className="sw-trofeu-velo" aria-hidden="true" />
+          <span className="sw-trofeu-brilho" aria-hidden="true" />
           <span className="sw-trofeu-topo">
             <span className="sw-trofeu-chip" aria-hidden="true">
               <Trophy size={18} strokeWidth={2} />
@@ -90,6 +107,7 @@ export default function ComoFunciona() {
             <span className="sw-trofeu-pop">
               <Trophy size={36} strokeWidth={1.5} />
             </span>
+            <span className="sw-trofeu-anel" aria-hidden="true" />
           </span>
           <span className="sw-trofeu-corpo">
             <span className="sw-mono block" style={{ color: "var(--sw-text-2)" }}>

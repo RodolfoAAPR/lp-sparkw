@@ -317,11 +317,17 @@ section[id] { scroll-margin-top: 84px; }
   color: var(--sw-text-1);
   text-align: left;
   font: inherit;
-  transition: border-color 0.3s var(--sw-ease-btn), box-shadow 0.3s var(--sw-ease-btn);
+  transition: border-color 0.3s var(--sw-ease-btn), box-shadow 0.3s var(--sw-ease-btn), transform 0.18s var(--sw-ease-out);
 }
-.sw-trofeu:hover {
-  border-color: rgba(232, 184, 75, 0.55);
-  box-shadow: 0 18px 50px rgba(0, 0, 0, 0.45);
+@media (hover: hover) {
+  .sw-trofeu:hover {
+    border-color: rgba(232, 184, 75, 0.55);
+    box-shadow: 0 18px 50px rgba(0, 0, 0, 0.45);
+  }
+  .sw-trofeu:hover .sw-trofeu-brilho {
+    transform: translateX(120%);
+    transition: transform 1s var(--sw-ease-out);
+  }
 }
 .sw-trofeu-fundo {
   position: absolute;
@@ -381,6 +387,27 @@ section[id] { scroll-margin-top: 84px; }
 }
 .sw-trofeu-corpo { position: relative; display: block; }
 .sw-credito { font-size: 10px; opacity: 0.7; }
+.sw-trofeu-brilho {
+  position: absolute;
+  inset: -20%;
+  background: linear-gradient(105deg, transparent 42%, rgba(255, 255, 255, 0.14) 50%, transparent 58%);
+  transform: translateX(-120%);
+  pointer-events: none;
+}
+.sw-trofeu-anel {
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  border: 2px solid var(--sw-prestigio);
+  box-shadow: 0 0 18px rgba(255, 105, 9, 0.55);
+  opacity: 0;
+  pointer-events: none;
+}
+.js .sw-trofeu.tocou .sw-trofeu-anel { animation: sw-onda 0.9s var(--sw-ease-out); }
+@keyframes sw-onda {
+  0% { opacity: 0.9; transform: scale(1); }
+  100% { opacity: 0; transform: scale(1.9); }
+}
 .sw-trofeu-pop { display: inline-block; transform-origin: 50% 80%; }
 .js .sw-trofeu.tocou .sw-trofeu-pop { animation: sw-pop 0.6s var(--sw-ease-out); }
 @keyframes sw-pop {
