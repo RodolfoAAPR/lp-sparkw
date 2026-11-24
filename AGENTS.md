@@ -68,6 +68,7 @@ Topo empilhado, mesma copy. Sem fio, sem Lenis, entradas paradas no estado final
 - 2026-11-24: build verde + autoteste 22/22 no Edge + Lighthouse celular 98/100/100 (SEO 69 pelo noindex de apresentação). Correção: botão do menu com texto escuro (contraste).
 - 2026-11-24: correção de fontes. Sora 700 real no lugar do negrito sintetizado, e o topo espera fontes e traço do logo (limite 1,5 s) antes de animar. Fases do topo amarradas na abertura.
 - 2026-11-24: correção do título. Espaços reais entre as máscaras (palavras sobrepunham 18 px), itálico a 1,1 (altura x medida 1,09), entrelinha 1,06, topo limitado a 860 px.
+- 2026-11-24: ritmo vertical apertado. Seções de py-28/md:py-40 para py-16/md:py-24, o vão somava 320 px.
 
 ## Pendências
 

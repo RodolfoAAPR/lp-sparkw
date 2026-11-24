@@ -20,7 +20,7 @@ const ITENS = [
 
 export default function Duvidas() {
   return (
-    <section id="duvidas" className="py-28 md:py-40">
+    <section id="duvidas" className="py-16 md:py-24">
       <div className="sw-concha">
         <p className="sw-mono" data-reveal style={{ color: "var(--sw-text-2)" }}>
           Capítulo 05 · Dúvidas
