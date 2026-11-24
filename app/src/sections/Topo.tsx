@@ -82,7 +82,7 @@ export default function Topo() {
             </p>
           </div>
           <p className="sw-mono mt-8" style={{ color: "var(--sw-text-2)" }}>
-            Xbox · PSN · Steam
+            Steam
           </p>
         </div>
       </div>

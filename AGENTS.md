@@ -11,7 +11,7 @@ Contexto para quem (pessoa ou agente de IA) for mexer nesta landing page. Leia i
 
 ## O que é a marca
 
-Sparkw é uma plataforma que recompensa gamers por conquistas dentro dos jogos: platinas e achievements viram SPK. Cobre Xbox, PSN e Steam. App para Windows, hoje em teste fechado (versão 1.0.0.47). Tese da página: jogar agora pode ter um sentido a mais, cada desafio cumprido vira recompensa.
+Sparkw é uma plataforma que recompensa gamers por conquistas dentro dos jogos: platinas e achievements viram SPK. Cobre a Steam (escopo fechado em 2026-11-24, Xbox e PSN fora). App para Windows, hoje em teste fechado (versão 1.0.0.47). Tese da página: jogar agora pode ter um sentido a mais, cada desafio cumprido vira recompensa.
 
 ## Regras do dono (não negociáveis)
 
@@ -37,14 +37,14 @@ Deploy do link de apresentação: `npx wrangler pages deploy dist --project-name
 
 ## Arquitetura da página
 
-Ordem das seções (`app/src/App.tsx`): Cabecalho · Topo · Manifesto · ComoFunciona · Plataformas · Instalacao · Duvidas · Baixar · Rodape, com Fio dentro do main.
+Ordem das seções (`app/src/App.tsx`): Cabecalho · Topo · Manifesto · ComoFunciona · Instalacao · Duvidas · Baixar · Rodape, com Fio dentro do main.
 
 - `Topo.tsx`: abertura de marca A (traço do SVG oficial + logo cheio), batidas com atraso (título 2,05 s, bloco 3,0 s).
 - `Manifesto.tsx`: palavras acendem com o progresso ("vale mais" em laranja).
 - `ComoFunciona.tsx`: linha do tempo com nós que acendem + troféu demonstração (toque a toque).
 - `Fio.tsx`: fio de faísca, SVG de página inteira, só com mouse, progresso em `--k`.
 - `efeitos.ts`: `useEfeitos` (is-in uma vez), `useProgresso` (sem setState), `useAcendePalavras`, `useTemMouse`.
-- CTA único: `#baixar` nas âncoras, `https://sparkw.app/baixar` no botão final.
+- Botões do topo e do menu levam a #instalacao; os capítulos 3 e 5 têm o botão externo https://sparkw.app/baixar.
 
 ## Celular
 
@@ -74,6 +74,7 @@ Topo empilhado, mesma copy. Sem fio, sem Lenis, entradas paradas no estado final
 - 2026-11-24: demonstração com troféu real do GTA VI, a pedido. Just Like Paradise (bronze, Gone Fishing), fonte em contexto/fonte-trofeu.txt.
 - 2026-11-24: sumiço no clique corrigido (remontava e perdia o .is-in). Cartão virou conquista com capa oficial, selo e crédito Rockstar.
 - 2026-11-24: cartão refeito em vertical compacto (340 px), na linha do cartão de associado da AutoSeg: arte ao fundo, chip, selo central, nome e SPK.
+- 2026-11-24: escopo só Steam, a pedido. Capítulo Plataformas removido (menu, FAQ de console e linhas ajustados), capítulos renumerados, efeito de clique nas plataformas arquivado.
 
 ## Pendências
 

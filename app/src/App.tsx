@@ -6,7 +6,6 @@ import Cabecalho from "@/sections/Cabecalho";
 import Topo from "@/sections/Topo";
 import Manifesto from "@/sections/Manifesto";
 import ComoFunciona from "@/sections/ComoFunciona";
-import Plataformas from "@/sections/Plataformas";
 import Instalacao from "@/sections/Instalacao";
 import Duvidas from "@/sections/Duvidas";
 import Baixar from "@/sections/Baixar";
@@ -26,7 +25,6 @@ export default function App() {
         <Topo />
         <Manifesto />
         <ComoFunciona />
-        <Plataformas />
         <Instalacao />
         <Duvidas />
         <Baixar />

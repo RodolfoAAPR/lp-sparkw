@@ -9,7 +9,7 @@ export default function Instalacao() {
     <section id="instalacao" className="py-12 md:py-16">
       <div className="sw-concha">
         <p className="sw-mono" data-reveal style={{ color: "var(--sw-text-2)" }}>
-          Capítulo 04 · Instalação
+          Capítulo 03 · Instalação
         </p>
         <h2 className="sw-display sw-titulo mt-6 max-w-[16ch] text-4xl md:text-6xl" data-reveal>
           O Windows vai avisar. <em>Pode seguir.</em>

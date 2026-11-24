@@ -6,7 +6,7 @@ export default function Rodape() {
           © 2026 Sparkw · Teste fechado
         </p>
         <p className="sw-mono" style={{ color: "var(--sw-text-2)" }}>
-          Xbox · PSN · Steam
+          Steam
         </p>
         <a href="#baixar" className="sw-mono" style={{ color: "var(--sw-text-1)" }}>
           Baixar

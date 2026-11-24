@@ -41,7 +41,7 @@ conquista vira SPK, sem mudar nada no seu jogo, e o próximo passo é baixar.
 |---|---|---|---|---|
 | 1 | 0,0 a 2,2 s | só o logo, no centro | (logo, sem texto) | A desenha e acende |
 | 2 | 2,0 a 3,2 s | título | "Jogar agora pode ter um sentido a mais." | palavras sobem da máscara |
-| 3 | 3,0 s em diante | apoio, botão, plataformas | "Você joga. Eu cuido do resto. Cada conquista vira SPK." + "Baixar para Windows" + "Xbox · PSN · Steam" | bloco sobe e aparece |
+| 3 | 3,0 s em diante | apoio, botão, linha Steam | "Você joga. Eu cuido do resto. Cada conquista vira SPK." + "Baixar para Windows" + "Steam" | bloco sobe e aparece |
 
 Sem JavaScript ou com reduzir movimento: logo pronto, textos visíveis, sem sequência.
 O apoio sai sem a palavra "bout", que segue sem confirmação (ver item 10).
@@ -49,12 +49,12 @@ O apoio sai sem a palavra "bout", que segue sem confirmação (ver item 10).
 ## 5. Topo no celular
 
 A mesma composição, empilhada: logo pronto no alto, título, apoio, botão,
-nota de versão, plataformas. Sem fio de faísca, sem efeito pesado, alturas em
+nota de versão, linha Steam. Sem fio de faísca, sem efeito pesado, alturas em
 `lvh`. O botão é o mesmo link do computador.
 
 ## 6. Seções abaixo do topo (copy literal, um único CTA: #baixar)
 
-Menu: mini logo + Como funciona + Plataformas + Dúvidas + botão "Baixar".
+Menu: mini logo + Como funciona + Dúvidas + botão "Baixar".
 
 Capítulo 01 · Manifesto (frase grande, sem botão):
 "Sua platina vale mais do que moral."
@@ -68,29 +68,24 @@ Momento interativo (nesta seção): "Toque no troféu." Um cartão de platina
 demonstra o pop do troféu com "+ SPK", sem número e sem nome de jogo,
 marcado como "Demonstração".
 
-Capítulo 03 · Plataformas ("Suas plataformas, numa conta só."):
-Três itens em texto, sem logos dos consoles: Xbox, PSN, Steam.
-Linha compartilhada: "Vale para as três. Uma conta só."
-
-Capítulo 04 · Instalação ("O Windows vai avisar. Pode seguir."):
+Capítulo 03 · Instalação ("O Windows vai avisar. Pode seguir."):
 1. "Se o navegador perguntar, escolha Manter."
 2. "Na tela O Windows protegeu o seu PC, clique em Mais informações e depois em Executar assim mesmo."
 3. "Instale e crie a sua conta com o email. O código chega na hora."
 Nota: "O aviso aparece porque eu ainda sou novo por aqui."
 
-Capítulo 05 · Dúvidas (nas palavras da pesquisa):
-- "Vale para o meu console?" / "Vale para Xbox, PSN e Steam. Se você joga em mais de um, tudo soma na mesma conta."
+Capítulo 04 · Dúvidas (nas palavras da pesquisa):
 - "Precisa pagar?" / "Não. O teste fechado é grátis, sem cartão."
 - "Preciso fazer algo no jogo?" / "Não. Você joga como sempre e nem percebe. A contagem é automática."
 - "Como o SPK funciona?" / "Cada conquista soma SPK na sua conta. As regras de resgate saem antes do fim do teste fechado."
 - "Por que o Windows acusa o instalador?" / "Porque a Sparkw ainda é nova. O arquivo é o oficial, e o capítulo acima mostra cada tela."
 
-Capítulo 06 · Baixar (âncora #baixar):
+Capítulo 05 · Baixar (âncora #baixar):
 "Sua próxima conquista já vale SPK."
 Botão: "Baixar para Windows", link https://sparkw.app/baixar.
 Nota: "Versão 1.0.0.47 · Windows · Grátis no teste"
 
-Rodapé: "© 2026 Sparkw · Teste fechado" + "Xbox · PSN · Steam" + link "Baixar".
+Rodapé: "© 2026 Sparkw · Teste fechado" + "Steam" + link "Baixar".
 Sem formulário (o CTA é link de download).
 Sem depoimento (sem fonte; espaço pronto para depois, com autorização).
 
@@ -122,6 +117,8 @@ Zero. Caminho B, sem geração. Higgsfield e Cloudflare seguem fora do escopo.
 3. "As regras de resgate saem antes do fim do teste fechado."
 4. Botão leva a https://sparkw.app/baixar (estável), não ao exe direto.
 5. Versão 1.0.0.47 vinda do /baixar; atualizar a cada release.
+
+Atualização 2026-11-24: escopo virou só Steam, a pedido do dono. O item 2 (três plataformas) está substituído, o capítulo 3 saiu e os capítulos renumeraram. O botão segue para o /baixar.
 
 ## 11. Linha do gate de copy
 

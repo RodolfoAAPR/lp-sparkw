@@ -93,7 +93,7 @@ Título vive à esquerda no computador, centralizado só na abertura de marca.
 Usar exatamente assim: "Jogar agora pode ter um sentido a mais.",
 "Sua platina vale mais do que moral.", "Você joga. Eu cuido do resto.
 Cada conquista vira SPK.", "Baixar para Windows", "Versão 1.0.0.47",
-"Teste fechado · Windows", "Xbox · PSN · Steam".
+"Teste fechado · Windows", "Steam".
 
 ## 10. Som
 

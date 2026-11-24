@@ -3,7 +3,7 @@ export default function Baixar() {
     <section id="baixar" className="py-12 md:py-16">
       <div className="sw-concha">
         <p className="sw-mono" data-reveal style={{ color: "var(--sw-text-2)" }}>
-          Capítulo 06 · Baixar
+          Capítulo 05 · Baixar
         </p>
         <h2 className="sw-display sw-titulo mt-6 max-w-[16ch] text-4xl md:text-6xl" data-reveal>
           Sua próxima conquista <em>já vale SPK.</em>

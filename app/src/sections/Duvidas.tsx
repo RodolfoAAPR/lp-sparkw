@@ -1,8 +1,4 @@
 const ITENS = [
-  {
-    p: "Vale para o meu console?",
-    r: "Vale para Xbox, PSN e Steam. Se você joga em mais de um, tudo soma na mesma conta.",
-  },
   { p: "Precisa pagar?", r: "Não. O teste fechado é grátis, sem cartão." },
   {
     p: "Preciso fazer algo no jogo?",
@@ -23,7 +19,7 @@ export default function Duvidas() {
     <section id="duvidas" className="py-12 md:py-16">
       <div className="sw-concha">
         <p className="sw-mono" data-reveal style={{ color: "var(--sw-text-2)" }}>
-          Capítulo 05 · Dúvidas
+          Capítulo 04 · Dúvidas
         </p>
         <div className="mt-10 max-w-[760px]">
           {ITENS.map((item) => (

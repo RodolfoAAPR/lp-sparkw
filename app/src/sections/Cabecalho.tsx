@@ -9,7 +9,6 @@ export default function Cabecalho() {
         </a>
         <nav className="sw-nav" aria-label="Seções">
           <a href="#como-funciona">Como funciona</a>
-          <a href="#plataformas">Plataformas</a>
           <a href="#duvidas">Dúvidas</a>
         </nav>
         <a href="#instalacao" className="sw-botao sw-botao-mini">
