@@ -27,6 +27,14 @@ export default function Instalacao() {
         <p className="mt-10" style={{ color: "var(--sw-text-2)" }} data-reveal>
           O aviso aparece porque eu ainda sou novo por aqui.
         </p>
+        <div className="mt-10 flex flex-wrap items-center gap-5" data-reveal>
+          <a href="https://sparkw.app/baixar" className="sw-botao">
+            Baixar para Windows
+          </a>
+          <p className="sw-mono" style={{ color: "var(--sw-text-2)" }}>
+            Versão 1.0.0.47 · Windows · Grátis no teste
+          </p>
+        </div>
       </div>
     </section>
   );

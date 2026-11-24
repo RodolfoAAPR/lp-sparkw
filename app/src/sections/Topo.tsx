@@ -74,7 +74,7 @@ export default function Topo() {
             Você joga. Eu cuido do resto. Cada conquista vira SPK.
           </p>
           <div className="mt-8 flex flex-wrap items-center gap-5">
-            <a href="#baixar" className="sw-botao">
+            <a href="#instalacao" className="sw-botao">
               Baixar para Windows
             </a>
             <p className="sw-mono" style={{ color: "var(--sw-text-2)" }}>

@@ -70,6 +70,7 @@ Topo empilhado, mesma copy. Sem fio, sem Lenis, entradas paradas no estado final
 - 2026-11-24: correção do título. Espaços reais entre as máscaras (palavras sobrepunham 18 px), itálico a 1,1 (altura x medida 1,09), entrelinha 1,06, topo limitado a 860 px.
 - 2026-11-24: ritmo vertical apertado. Seções de py-28/md:py-40 para py-16/md:py-24, o vão somava 320 px.
 - 2026-11-24: ritmo apertado de novo, a pedido. Seções em py-12/md:py-16, vão em 128 px.
+- 2026-11-24: fluxo de download em duas etapas, a pedido. Botões do topo e do menu levam ao capítulo 4, que ganhou o botão externo. O capítulo 6 final segue com o botão.
 
 ## Pendências
 

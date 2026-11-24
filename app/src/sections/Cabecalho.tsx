@@ -12,7 +12,7 @@ export default function Cabecalho() {
           <a href="#plataformas">Plataformas</a>
           <a href="#duvidas">Dúvidas</a>
         </nav>
-        <a href="#baixar" className="sw-botao sw-botao-mini">
+        <a href="#instalacao" className="sw-botao sw-botao-mini">
           Baixar
         </a>
       </div>
