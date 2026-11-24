@@ -7,3 +7,5 @@ Fontes:
 - https://www.powerpyx.com/gta-6-grand-theft-auto-vI-trophy-guide-roadmap/
 - https://everytrophy.com/en/grand-theft-auto-vi/trophies-and-achievements/full-platinum-guide/
 Corroborado por: playday.one, gtaboom.com, gta6basecamp.com, gta6-life.com.
+Arte da capa: og:image oficial de https://www.rockstargames.com/VI (1200 px, JPEG, 864.851 bytes, sem alteracao).
+Arquivo: app/public/assets/gta6-arte.jpg. Se a Rockstar pedir, trocar na hora.

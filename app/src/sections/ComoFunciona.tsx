@@ -1,6 +1,7 @@
-import { useRef, useState, type CSSProperties } from "react";
+import { useRef, type CSSProperties } from "react";
 import { Trophy } from "lucide-react";
 import { useProgresso } from "@/lib/efeitos";
+import { base } from "@/lib/base";
 
 const PASSOS = [
   {
@@ -14,7 +15,15 @@ const PASSOS = [
 export default function ComoFunciona() {
   const trilho = useRef<HTMLElement | null>(null);
   useProgresso(trilho);
-  const [toques, setToques] = useState(0);
+  const cartao = useRef<HTMLButtonElement | null>(null);
+  // Recomeça o pop sem remontar: remontar perdia o .is-in e o cartão sumia.
+  const tocar = () => {
+    const el = cartao.current;
+    if (!el) return;
+    el.classList.remove("tocou");
+    void el.offsetWidth;
+    el.classList.add("tocou");
+  };
 
   return (
     <section id="como-funciona" className="py-12 md:py-16">
@@ -50,23 +59,39 @@ export default function ComoFunciona() {
           ))}
         </div>
         <button
-          key={toques}
+          ref={cartao}
           type="button"
-          className={`sw-trofeu mt-14 flex items-center gap-5 p-6 md:p-8${toques ? " tocou" : ""}`}
-          onClick={() => setToques((t) => t + 1)}
+          className="sw-trofeu mt-14"
+          onClick={tocar}
           aria-live="polite"
+          aria-label="Demonstração: troféu Just Like Paradise, do GTA VI. Toque para ver o pop."
           data-reveal
         >
-          <span className="sw-trofeu-pop" style={{ color: "var(--sw-prestigio)" }}>
-            <Trophy size={40} strokeWidth={1.75} />
+          <span className="sw-trofeu-capa">
+            <img
+              src={`${base}assets/gta6-arte.jpg`}
+              alt="Arte oficial do GTA VI"
+              loading="lazy"
+              decoding="async"
+              width="1200"
+              height="630"
+            />
+            <span className="sw-trofeu-selo">
+              <span className="sw-trofeu-pop">
+                <Trophy size={30} strokeWidth={1.75} />
+              </span>
+            </span>
           </span>
-          <span>
+          <span className="sw-trofeu-corpo">
             <span className="sw-mono block" style={{ color: "var(--sw-text-2)" }}>
               Demonstração · Toque no troféu
             </span>
-            <span className="sw-display mt-2 block text-lg md:text-xl">Just Like Paradise</span>
-            <span className="sw-mono mt-1 block" style={{ color: "var(--sw-text-2)" }}>
+            <span className="sw-display mt-2 block text-xl md:text-2xl">Just Like Paradise</span>
+            <span className="sw-mono mt-2 block" style={{ color: "var(--sw-text-2)" }}>
               GTA VI · Bronze · <span className="sw-mais-spk">+ SPK</span>
+            </span>
+            <span className="sw-mono sw-credito mt-3 block" style={{ color: "var(--sw-text-2)" }}>
+              Arte oficial · Rockstar Games
             </span>
           </span>
         </button>

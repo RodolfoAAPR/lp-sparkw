@@ -72,6 +72,7 @@ Topo empilhado, mesma copy. Sem fio, sem Lenis, entradas paradas no estado final
 - 2026-11-24: ritmo apertado de novo, a pedido. Seções em py-12/md:py-16, vão em 128 px.
 - 2026-11-24: fluxo de download em duas etapas, a pedido. Botões do topo e do menu levam ao capítulo 4, que ganhou o botão externo. O capítulo 6 final segue com o botão.
 - 2026-11-24: demonstração com troféu real do GTA VI, a pedido. Just Like Paradise (bronze, Gone Fishing), fonte em contexto/fonte-trofeu.txt.
+- 2026-11-24: sumiço no clique corrigido (remontava e perdia o .is-in). Cartão virou conquista com capa oficial, selo e crédito Rockstar.
 
 ## Pendências
 
