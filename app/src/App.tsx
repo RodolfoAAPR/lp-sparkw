@@ -1,17 +1,37 @@
 import { useEffect } from "react";
 import "lenis/dist/lenis.css";
 import { iniciarRolagemSuave } from "@/lib/rolagemSuave";
+import { useEfeitos, useTemMouse } from "@/lib/efeitos";
+import Cabecalho from "@/sections/Cabecalho";
 import Topo from "@/sections/Topo";
+import Manifesto from "@/sections/Manifesto";
+import ComoFunciona from "@/sections/ComoFunciona";
+import Plataformas from "@/sections/Plataformas";
+import Instalacao from "@/sections/Instalacao";
+import Duvidas from "@/sections/Duvidas";
+import Baixar from "@/sections/Baixar";
+import Rodape from "@/sections/Rodape";
+import Fio from "@/sections/Fio";
 
-/* Cada seção da LP é um componente em src/sections/. Componentes copiados do 21st.dev,
-   React Bits e shadcn ficam em src/components/ui/ com o código original. */
 export default function App() {
-  // rolagem com inércia, como no Mac (Lenis): padrão em toda LP
   useEffect(() => iniciarRolagemSuave(), []);
+  useEfeitos();
+  const temMouse = useTemMouse();
 
   return (
-    <main>
-      <Topo />
-    </main>
+    <>
+      <Cabecalho />
+      <main className="sw-main">
+        {temMouse && <Fio />}
+        <Topo />
+        <Manifesto />
+        <ComoFunciona />
+        <Plataformas />
+        <Instalacao />
+        <Duvidas />
+        <Baixar />
+      </main>
+      <Rodape />
+    </>
   );
 }

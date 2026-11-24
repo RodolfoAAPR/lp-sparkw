@@ -37,11 +37,18 @@ Deploy do link de apresentação: `npx wrangler pages deploy dist --project-name
 
 ## Arquitetura da página
 
-A definir no design package. Ação única: baixar o app para Windows.
+Ordem das seções (`app/src/App.tsx`): Cabecalho · Topo · Manifesto · ComoFunciona · Plataformas · Instalacao · Duvidas · Baixar · Rodape, com Fio dentro do main.
+
+- `Topo.tsx`: abertura de marca A (traço do SVG oficial + logo cheio), batidas com atraso (título 2,05 s, bloco 3,0 s).
+- `Manifesto.tsx`: palavras acendem com o progresso ("vale mais" em laranja).
+- `ComoFunciona.tsx`: linha do tempo com nós que acendem + troféu demonstração (toque a toque).
+- `Fio.tsx`: fio de faísca, SVG de página inteira, só com mouse, progresso em `--k`.
+- `efeitos.ts`: `useEfeitos` (is-in uma vez), `useProgresso` (sem setState), `useAcendePalavras`, `useTemMouse`.
+- CTA único: `#baixar` nas âncoras, `https://sparkw.app/baixar` no botão final.
 
 ## Celular
 
-A definir. Celular é tratado como produto à parte: foto no lugar do vídeo, sem efeito pesado.
+Topo empilhado, mesma copy. Sem fio, sem Lenis, entradas paradas no estado final, alturas em `lvh`, menu sólido sem blur. Overflow zerado de 360 a 1920 px (Edge automatizado). Fluidez em aparelho e teste do dono: pendentes. Modos `?teste=fio,fundo` prontos.
 
 ## Conteúdo e decisões
 
@@ -57,12 +64,14 @@ A definir. Celular é tratado como produto à parte: foto no lugar do vídeo, se
 - 2026-11-24: abertura de marca A Desenha e acende (vitrine, Fase 4).
 - 2026-11-24: Trio 1 Neon técnico, paleta Noite neon com contraste medido (vitrine, Fase 4).
 - 2026-11-24: elemento-assinatura Fio de faísca, só no computador (Fase 4).
+- 2026-11-24: design package aprovado, incluindo o item 10 (apoio sem "bout", uma conta só, regras de resgate, botão ao /baixar, versão do /baixar).
+- 2026-11-24: build verde + autoteste 22/22 no Edge + Lighthouse celular 98/100/100 (SEO 69 pelo noindex de apresentação). Correção: botão do menu com texto escuro (contraste).
 
 ## Pendências
 
-1. Termo "bout" na frase do /baixar: é termo da marca ou revisão.
-2. Regras do SPK: como ganha, quanto vale, como resgata.
-3. URL final do botão: instalador direto ou página /baixar.
-4. Números futuros com fonte (usuários, SPK distribuído).
+1. Regras do SPK (a página promete as regras antes do fim do teste).
+2. Teste no celular do dono (fluidez; modos `?teste=fio,fundo` prontos).
+3. og-image.jpg antes de publicar (a tag existe, o arquivo não).
+4. Versão do app: atualizar 1.0.0.47 a cada release do /baixar.
 5. Prints reais do app quando quiser mostrar o produto.
 6. ffmpeg ausente no PC: instalar com `winget install Gyan.FFmpeg` antes da Fase 7.
