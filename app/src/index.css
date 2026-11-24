@@ -86,6 +86,13 @@
   font-display: swap;
 }
 @font-face {
+  font-family: "Sora";
+  src: url("/fonts/sora-700.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
   font-family: "Space Mono";
   src: url("/fonts/spacemono-400.woff2") format("woff2");
   font-weight: 400;
@@ -240,6 +247,15 @@ section[id] { scroll-margin-top: 84px; }
 }
 .js [data-reveal].is-in { opacity: 1; transform: none; }
 
+/* fases do topo: entram com atraso a partir da abertura (section .is-in) */
+.js .sw-hero-fase {
+  opacity: 0;
+  transform: translate3d(0, 22px, 0);
+  transition: opacity 0.9s var(--sw-ease-out), transform 0.9s var(--sw-ease-out);
+  transition-delay: var(--d, 0ms);
+}
+.js .is-in .sw-hero-fase { opacity: 1; transform: none; }
+
 /* manifesto: palavras apagam e acendem */
 .sw-manifesto { font-size: clamp(1.9rem, 5vw, 3.6rem); line-height: 1.08; text-wrap: balance; }
 .js .sw-manifesto span { opacity: 0.16; transition: opacity 0.4s ease; }
@@ -328,7 +344,7 @@ section[id] { scroll-margin-top: 84px; }
 
 /* toque: entradas paradas no estado final */
 @media (hover: none) {
-  .js [data-reveal] { opacity: 1; transform: none; transition: none; }
+  .js [data-reveal], .js .sw-hero-fase { opacity: 1; transform: none; transition: none; }
   .js .sw-wi { transform: none; transition: none; }
   .js .sw-manifesto span { opacity: 1; }
   .js .sw-marca-cheio { opacity: 1; animation: none; }
@@ -342,8 +358,8 @@ section[id] { scroll-margin-top: 84px; }
 /* movimento reduzido: estados finais, sem animação */
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
-  .js [data-reveal], .js .sw-manifesto span, .js .sw-marca-cheio { opacity: 1; }
-  .js [data-reveal], .js .sw-wi { transform: none; transition: none; }
+  .js [data-reveal], .js .sw-hero-fase, .js .sw-manifesto span, .js .sw-marca-cheio { opacity: 1; }
+  .js [data-reveal], .js .sw-hero-fase, .js .sw-wi { transform: none; transition: none; }
   .js .tela *, .js .sw-topo *, .js .sw-trofeu * { animation: none !important; }
   .sw-marca-risco, .sw-fio { display: none; }
   .js .sw-marca-cheio { animation: none; }

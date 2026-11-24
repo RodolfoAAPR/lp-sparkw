@@ -1,14 +1,16 @@
-import { useEffect, type CSSProperties } from "react";
+import { useEffect, useState, type CSSProperties } from "react";
 import Palavras from "@/components/Palavras";
 import { base } from "@/lib/base";
 
 const TITULO = ["Jogar", "agora", "pode", "ter", "um", "sentido", "a", "mais."];
 
 export default function Topo() {
-  // Camada de traço da abertura, montada do SVG oficial. Sem JS, o logo cheio aparece parado.
+  // A abertura só começa com as fontes e o traço do logo prontos (ou 1,5 s,
+  // o que vier primeiro): nada anima com fonte reserva no meio do gesto.
+  const [pronto, setPronto] = useState(false);
   useEffect(() => {
     let vivo = true;
-    fetch(`${base}assets/logo.svg`)
+    const montaTraco = fetch(`${base}assets/logo.svg`)
       .then((r) => r.text())
       .then((txt) => {
         if (!vivo) return;
@@ -35,13 +37,18 @@ export default function Topo() {
         slot.appendChild(svg);
       })
       .catch(() => {});
+    const fontes = "fonts" in document ? document.fonts.ready : Promise.resolve();
+    const espera = new Promise((ok) => setTimeout(ok, 1500));
+    Promise.race([Promise.allSettled([montaTraco, fontes]).then(() => {}), espera]).then(() => {
+      if (vivo) setPronto(true);
+    });
     return () => {
       vivo = false;
     };
   }, []);
 
   return (
-    <section id="topo" className="sw-topo sw-animar">
+    <section id="topo" className={`sw-topo${pronto ? " is-in" : ""}`}>
       <div className="sw-ambiente" aria-hidden="true" />
       <div className="sw-concha relative">
         <div className="sw-marca-palco">
@@ -55,13 +62,13 @@ export default function Topo() {
           />
           <div className="sw-marca-risco" id="sw-marca-risco" aria-hidden="true" />
         </div>
-        <p className="sw-mono mt-10" data-reveal style={{ "--d": "2000ms" } as CSSProperties}>
+        <p className="sw-mono sw-hero-fase mt-10" style={{ "--d": "2000ms" } as CSSProperties}>
           Teste fechado · Windows
         </p>
         <h1 className="sw-display sw-titulo sw-topo-titulo mt-6">
           <Palavras palavras={TITULO} emStart={5} atraso="2.05s" />
         </h1>
-        <div data-reveal style={{ "--d": "3000ms" } as CSSProperties}>
+        <div className="sw-hero-fase" style={{ "--d": "3000ms" } as CSSProperties}>
           <p className="mt-8 max-w-[34ch] text-lg" style={{ color: "var(--sw-text-2)" }}>
             Você joga. Eu cuido do resto. Cada conquista vira SPK.
           </p>
