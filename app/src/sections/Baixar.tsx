@@ -1,6 +1,6 @@
 export default function Baixar() {
   return (
-    <section id="baixar" className="py-16 md:py-24">
+    <section id="baixar" className="py-12 md:py-16">
       <div className="sw-concha">
         <p className="sw-mono" data-reveal style={{ color: "var(--sw-text-2)" }}>
           Capítulo 06 · Baixar

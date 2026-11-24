@@ -7,7 +7,7 @@ export default function Manifesto() {
   const ref = useRef<HTMLElement | null>(null);
   useAcendePalavras(ref);
   return (
-    <section id="manifesto" className="py-16 md:py-24">
+    <section id="manifesto" className="py-12 md:py-16">
       <div className="sw-concha">
         <p className="sw-mono" data-reveal style={{ color: "var(--sw-text-2)" }}>
           Capítulo 01 · Manifesto

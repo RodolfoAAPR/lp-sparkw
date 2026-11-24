@@ -17,7 +17,7 @@ export default function ComoFunciona() {
   const [toques, setToques] = useState(0);
 
   return (
-    <section id="como-funciona" className="py-16 md:py-24">
+    <section id="como-funciona" className="py-12 md:py-16">
       <div className="sw-concha">
         <p className="sw-mono" data-reveal style={{ color: "var(--sw-text-2)" }}>
           Capítulo 02 · Como funciona
