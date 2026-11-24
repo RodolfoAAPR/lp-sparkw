@@ -33,7 +33,7 @@ export default function ComoFunciona() {
         >
           <div className="sw-trilho-fogo" aria-hidden="true" />
           {PASSOS.map((p, i) => (
-            <div key={p.t} className="flex items-start gap-6 pl-1" data-reveal>
+            <div key={p.t} className="flex items-start gap-6" data-reveal>
               <span
                 className="sw-no mt-1"
                 data-pos={((i + 1) / (PASSOS.length + 1)).toFixed(2)}
