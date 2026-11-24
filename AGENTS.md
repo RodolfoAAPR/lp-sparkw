@@ -2,7 +2,7 @@
 
 Contexto para quem (pessoa ou agente de IA) for mexer nesta landing page. Leia inteiro antes de mudar qualquer coisa.
 
-- **No ar (apresentação):** ainda sem link. Cloudflare e Higgsfield fora do escopo por enquanto, a pedido do dono (2026-11-24).
+- **No ar (apresentação):** <https://rodolfoaapr.github.io/lp-sparkw/> (GitHub Pages, fora do Google). Cloudflare e Higgsfield seguem fora do escopo.
 - **Domínio oficial:** <https://sparkw.app> (a página atual /baixar segue no ar até a LP ficar pronta).
 - **Código:** `app/` (React 19 + Vite + TypeScript + Tailwind v4, pré-renderizado).
 - **Decisões de criação:** `design-package.md`. **Movimento:** `MOTION-DESIGN-SYSTEM.md`.

@@ -1,5 +1,6 @@
 import { useEffect, type CSSProperties } from "react";
 import Palavras from "@/components/Palavras";
+import { base } from "@/lib/base";
 
 const TITULO = ["Jogar", "agora", "pode", "ter", "um", "sentido", "a", "mais."];
 
@@ -7,7 +8,7 @@ export default function Topo() {
   // Camada de traço da abertura, montada do SVG oficial. Sem JS, o logo cheio aparece parado.
   useEffect(() => {
     let vivo = true;
-    fetch("/assets/logo.svg")
+    fetch(`${base}assets/logo.svg`)
       .then((r) => r.text())
       .then((txt) => {
         if (!vivo) return;
@@ -46,7 +47,7 @@ export default function Topo() {
         <div className="sw-marca-palco">
           <img
             className="sw-marca-cheio"
-            src="/assets/logo.svg"
+            src={`${base}assets/logo.svg`}
             alt="sparkw"
             width="420"
             height="112"
