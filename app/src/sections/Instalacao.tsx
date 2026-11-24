@@ -32,7 +32,7 @@ export default function Instalacao() {
             Baixar para Windows
           </a>
           <p className="sw-mono" style={{ color: "var(--sw-text-2)" }}>
-            Versão 1.0.0.47 · Windows · Grátis no teste
+            Versão 1.0.0.47 · Windows · Suporte à Steam
           </p>
         </div>
       </div>

@@ -73,6 +73,8 @@ Capítulo 03 · Instalação ("O Windows vai avisar. Pode seguir."):
 2. "Na tela O Windows protegeu o seu PC, clique em Mais informações e depois em Executar assim mesmo."
 3. "Instale e crie a sua conta com o email. O código chega na hora."
 Nota: "O aviso aparece porque eu ainda sou novo por aqui."
+Botão: "Baixar para Windows", link https://sparkw.app/baixar.
+Nota: "Versão 1.0.0.47 · Windows · Suporte à Steam"
 
 Capítulo 04 · Dúvidas (nas palavras da pesquisa):
 - "Precisa pagar?" / "Não. O teste fechado é grátis, sem cartão."
@@ -83,7 +85,7 @@ Capítulo 04 · Dúvidas (nas palavras da pesquisa):
 Capítulo 05 · Baixar (âncora #baixar):
 "Sua próxima conquista já vale SPK."
 Botão: "Baixar para Windows", link https://sparkw.app/baixar.
-Nota: "Versão 1.0.0.47 · Windows · Grátis no teste"
+Nota: "Versão 1.0.0.47 · Windows · Suporte à Steam"
 
 Rodapé: "© 2026 Sparkw · Teste fechado" + "Steam" + link "Baixar".
 Sem formulário (o CTA é link de download).

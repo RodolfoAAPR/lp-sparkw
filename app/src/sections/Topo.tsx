@@ -78,7 +78,7 @@ export default function Topo() {
               Baixar para Windows
             </a>
             <p className="sw-mono" style={{ color: "var(--sw-text-2)" }}>
-              Versão 1.0.0.47 · Grátis no teste
+              Versão 1.0.0.47 · Suporte à Steam
             </p>
           </div>
           <p className="sw-mono mt-8" style={{ color: "var(--sw-text-2)" }}>
