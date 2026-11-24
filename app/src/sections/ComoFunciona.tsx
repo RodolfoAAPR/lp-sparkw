@@ -67,28 +67,37 @@ export default function ComoFunciona() {
           aria-label="Demonstração: troféu Just Like Paradise, do GTA VI. Toque para ver o pop."
           data-reveal
         >
-          <span className="sw-trofeu-capa">
-            <img
-              src={`${base}assets/gta6-arte.jpg`}
-              alt="Arte oficial do GTA VI"
-              loading="lazy"
-              decoding="async"
-              width="1200"
-              height="630"
-            />
-            <span className="sw-trofeu-selo">
-              <span className="sw-trofeu-pop">
-                <Trophy size={30} strokeWidth={1.75} />
-              </span>
+          <img
+            className="sw-trofeu-fundo"
+            src={`${base}assets/gta6-arte.jpg`}
+            alt="Arte oficial do GTA VI"
+            loading="lazy"
+            decoding="async"
+            width="1200"
+            height="630"
+          />
+          <span className="sw-trofeu-velo" aria-hidden="true" />
+          <span className="sw-trofeu-topo">
+            <span className="sw-trofeu-chip" aria-hidden="true">
+              <Trophy size={18} strokeWidth={2} />
+            </span>
+            <span className="sw-mono sw-demo" style={{ color: "var(--sw-text-1)" }}>
+              <i aria-hidden="true" />
+              Demonstração
+            </span>
+          </span>
+          <span className="sw-trofeu-selo">
+            <span className="sw-trofeu-pop">
+              <Trophy size={36} strokeWidth={1.5} />
             </span>
           </span>
           <span className="sw-trofeu-corpo">
             <span className="sw-mono block" style={{ color: "var(--sw-text-2)" }}>
-              Demonstração · Toque no troféu
+              GTA VI · Bronze
             </span>
-            <span className="sw-display mt-2 block text-xl md:text-2xl">Just Like Paradise</span>
+            <span className="sw-display mt-2 block text-2xl">Just Like Paradise</span>
             <span className="sw-mono mt-2 block" style={{ color: "var(--sw-text-2)" }}>
-              GTA VI · Bronze · <span className="sw-mais-spk">+ SPK</span>
+              Toque no troféu · <span className="sw-mais-spk">+ SPK</span>
             </span>
             <span className="sw-mono sw-credito mt-3 block" style={{ color: "var(--sw-text-2)" }}>
               Arte oficial · Rockstar Games
