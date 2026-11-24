@@ -76,6 +76,7 @@ Topo empilhado, mesma copy. Sem fio, sem Lenis, entradas paradas no estado final
 - 2026-11-24: cartão refeito em vertical compacto (340 px), na linha do cartão de associado da AutoSeg: arte ao fundo, chip, selo central, nome e SPK.
 - 2026-11-24: escopo só Steam, a pedido. Capítulo Plataformas removido (menu, FAQ de console e linhas ajustados), capítulos renumerados, efeito de clique nas plataformas arquivado.
 - 2026-11-24: notas de versão trocaram "Grátis no teste" por "Suporte à Steam", a pedido. FAQ de preço mantida.
+- 2026-11-24: linha "Steam" do topo removida, a pedido. Rodapé mantém.
 
 ## Pendências
 

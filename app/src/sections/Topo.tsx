@@ -81,9 +81,6 @@ export default function Topo() {
               Versão 1.0.0.47 · Suporte à Steam
             </p>
           </div>
-          <p className="sw-mono mt-8" style={{ color: "var(--sw-text-2)" }}>
-            Steam
-          </p>
         </div>
       </div>
     </section>

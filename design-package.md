@@ -41,7 +41,7 @@ conquista vira SPK, sem mudar nada no seu jogo, e o próximo passo é baixar.
 |---|---|---|---|---|
 | 1 | 0,0 a 2,2 s | só o logo, no centro | (logo, sem texto) | A desenha e acende |
 | 2 | 2,0 a 3,2 s | título | "Jogar agora pode ter um sentido a mais." | palavras sobem da máscara |
-| 3 | 3,0 s em diante | apoio, botão, linha Steam | "Você joga. Eu cuido do resto. Cada conquista vira SPK." + "Baixar para Windows" + "Steam" | bloco sobe e aparece |
+| 3 | 3,0 s em diante | apoio, botão, nota de versão | "Você joga. Eu cuido do resto. Cada conquista vira SPK." + "Baixar para Windows" + "Versão 1.0.0.47 · Suporte à Steam" | bloco sobe e aparece |
 
 Sem JavaScript ou com reduzir movimento: logo pronto, textos visíveis, sem sequência.
 O apoio sai sem a palavra "bout", que segue sem confirmação (ver item 10).
@@ -49,7 +49,7 @@ O apoio sai sem a palavra "bout", que segue sem confirmação (ver item 10).
 ## 5. Topo no celular
 
 A mesma composição, empilhada: logo pronto no alto, título, apoio, botão,
-nota de versão, linha Steam. Sem fio de faísca, sem efeito pesado, alturas em
+nota de versão. Sem fio de faísca, sem efeito pesado, alturas em
 `lvh`. O botão é o mesmo link do computador.
 
 ## 6. Seções abaixo do topo (copy literal, um único CTA: #baixar)
