@@ -52,6 +52,8 @@ A definir. Celular é tratado como produto à parte: foto no lugar do vídeo, se
 - 2026-11-24: sensação da página é épica e cinematográfica (briefing).
 - 2026-11-24: materiais vindos do ar, salvos em contexto/ (briefing).
 - 2026-11-24: acesso grátis no teste fechado, diferencial líder é conquista vira recompensa, prova só com fonte (briefing).
+- 2026-11-24: caminho B (sem vídeo gerado) por escopo, sem Higgsfield por enquanto. Cenas em vídeo entram depois, se o dono liberar.
+- 2026-11-24: direção visual Noite neon (Fase 3). Tiers de cena não valem sem vídeo.
 
 ## Pendências
 
