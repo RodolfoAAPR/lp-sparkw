@@ -61,9 +61,12 @@ export default function ComoFunciona() {
             <Trophy size={40} strokeWidth={1.75} />
           </span>
           <span>
-            <span className="sw-display block text-lg md:text-xl">Toque no troféu.</span>
+            <span className="sw-mono block" style={{ color: "var(--sw-text-2)" }}>
+              Demonstração · Toque no troféu
+            </span>
+            <span className="sw-display mt-2 block text-lg md:text-xl">Just Like Paradise</span>
             <span className="sw-mono mt-1 block" style={{ color: "var(--sw-text-2)" }}>
-              Demonstração · <span className="sw-mais-spk">+ SPK</span>
+              GTA VI · Bronze · <span className="sw-mais-spk">+ SPK</span>
             </span>
           </span>
         </button>
